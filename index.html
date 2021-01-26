@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <form class="checkout">
+      <div class="user-info">
+        <div class="contact-info">
+          <h2>Contact information</h2>
+          <label for="email">Email</label>
+          <div class="input-and-icon">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <label for="phone">Phone</label>
+          <div class="input-and-icon">
+            <i class="fas fa-phone-alt"></i>
+            <input
+              type="tel"
+              id="phone"
+              maxlength="12"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="(555)-555-5555"
+              required
+            />
+          </div>
+        </div>
+        <div class="shipping-info">
+          <h2>Shipping address</h2>
+          <label for="name">Full name</label>
+          <div class="input-and-icon">
+            <i class="fas fa-user-circle"></i>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <label for="address">Address</label>
+          <div class="input-and-icon">
+            <i class="fas fa-home"></i>
+            <input
+              type="text"
+              id="address"
+              placeholder="Your address"
+              required
+            />
+          </div>
+          <label for="city">City</label>
+          <div class="input-and-icon">
+            <i class="fas fa-city"></i>
+            <input type="text" id="city" placeholder="Your city" required />
+          </div>
+          <div class="country-and-postal">
+            <div class="container">
+              <label for="countries">Country</label>
+              <div class="input-and-icon">
+                <i class="fas fa-globe-americas"></i>
+                <select name="countries" id="countries" required>
+                  <option
+                    class="default"
+                    value=""
+                    selected="selected"
+                    disabled
+                    hidden
+                  >
+                    Your country
+                  </option>
+                  <option value="United Arab Emirates">
+                    United Arab Emirates
+                  </option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="container">
+              <label for="postal-code">Postal code</label>
+              <div class="input-and-icon">
+                <i class="fas fa-mail-bulk"></i>
+                <input
+                  type="text"
+                  id="postal-code"
+                  pattern="[0-9]*"
+                  placeholder="Your postal code"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="save-info-checkbox">
+            <input type="checkbox" id="save-info" />
+            <label for="save-info">Save this information for next time</label>
+          </div>
+        </div>
+        <div class="submit-button">
+          <button type="submit">Continue</button>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart-item">
+          <img src="./photo1.png" alt="Backpack" />
+          <div class="item-info">
+            <p class="item-name">Vintage Backpack</p>
+            <div class="price">
+              <p class="current-price">$54.99</p>
+              <p class="original-price">$94.99</p>
+            </div>
+            <div class="amount">
+              <button type="button" class="subtract-item">-</button>
+              <span>1</span>
+              <button type="button" class="add-item">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="./photo2.png" alt="Shoes" />
+          <div class="item-info">
+            <p class="item-name">Levi Shoes</p>
+            <div class="price">
+              <p class="current-price">$74.99</p>
+              <p class="original-price">$124.99</p>
+            </div>
+            <div class="amount">
+              <button type="button" class="subtract-item">-</button>
+              <span>1</span>
+              <button type="button" class="add-item">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="shipping">
+          <p>Shipping</p>
+          <p class="shipping-amount">$19.00</p>
+        </div>
+        <div class="total">
+          <p>Total</p>
+          <p class="total-amount">$148.98</p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
