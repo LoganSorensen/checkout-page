@@ -5,6 +5,20 @@ body {
   padding: 3% 15%;
 }
 
+.success-message {
+  color: #004085;
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  border-radius: 12px;
+  padding: 1%;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.hidden {
+  display: none;
+}
+
 h1 {
   font-size: 36px;
   line-height: 43.88px;

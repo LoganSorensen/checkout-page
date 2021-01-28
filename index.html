@@ -125,6 +125,7 @@
         <div class="submit-button">
           <button type="submit">Continue</button>
         </div>
+        <div class="success-message hidden">Your order has been placed!</div>
       </div>
       <div class="cart">
         <div class="cart-item">
@@ -159,13 +160,16 @@
         </div>
         <div class="shipping">
           <p>Shipping</p>
-          <p class="shipping-amount">$19.00</p>
+          <p class="shipping-amount">
+            $<span class="shipping-number">19.00</span>
+          </p>
         </div>
         <div class="total">
           <p>Total</p>
-          <p class="total-amount">$148.98</p>
+          <p class="total-amount">$<span class="total-number">148.98</span></p>
         </div>
       </div>
     </form>
   </body>
+  <script src="index.js"></script>
 </html>
