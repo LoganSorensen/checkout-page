@@ -72,7 +72,7 @@ select:focus {
 }
 
 select {
-  padding: 5%;
+  padding: 4%;
   padding-left: 15%;
 }
 
@@ -94,7 +94,7 @@ input::placeholder {
 }
 
 .country-and-postal input {
-  padding: 5%;
+  padding: 4%;
   padding-left: 20%;
 }
 
@@ -177,6 +177,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12%;
 }
 
 .add-item,
@@ -231,4 +232,87 @@ img {
   border-radius: 12px;
   padding: 3% 8%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 2%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  form {
+    flex-direction: column-reverse;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .user-info {
+    width: 100%;
+  }
+
+  .cart {
+    width: 90%;
+    margin-bottom: 15%;
+    padding: 5%;
+  }
+
+  .item-name {
+    font-size: 12px;
+  }
+
+  .current-price {
+    font-size: 12px;
+  }
+
+  .original-price {
+    font-size: 10px;
+  }
+
+  .shipping p,
+  .total p {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  i {
+    padding-left: 2%;
+  }
+
+  input,
+  select {
+    padding: 3.5%;
+    padding-left: 10%;
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  select {
+    padding: 6%;
+    padding-left: 15%;
+  }
+
+  .country-and-postal input {
+    padding: 6.5%;
+    padding-left: 20%;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  .save-info-checkbox {
+    align-items: unset;
+  }
+
+  .submit-button button {
+    padding: 5% 12%;
+  }
 }
